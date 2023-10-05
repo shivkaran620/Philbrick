@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Min/Max character length of email address -->
+    <integer name="min_email_character_length">5</integer>
+    <integer name="max_email_character_length">120</integer>
+</resources>

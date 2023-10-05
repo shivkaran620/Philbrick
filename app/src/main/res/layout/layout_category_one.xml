@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Category"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCategoryDetail"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtCategory"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCategory"
+        app:layout_constraintTop_toTopOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/txtSubCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/subCategory"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryDetail" />
+
+    <TextView
+        android:id="@+id/txtSubCategoryDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtSubCategory"
+        android:fontFamily="@font/poppins"
+
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSubCategory"
+        app:layout_constraintTop_toTopOf="@+id/txtSubCategory" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/ProductName"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubCategoryDetail" />
+
+    <TextView
+        android:id="@+id/txtProductNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtSubCategory"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtProductName"
+        app:layout_constraintTop_toTopOf="@+id/txtProductName" />
+
+    <TextView
+        android:id="@+id/txtPartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/PartName"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductName" />
+
+    <TextView
+        android:id="@+id/txtPartNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtProductNameDetail"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPartName"
+        app:layout_constraintTop_toTopOf="@+id/txtPartName" />
+
+    <TextView
+        android:id="@+id/txtPartCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/PartCode"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPartName" />
+
+    <TextView
+        android:id="@+id/txtPartCodeDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPartCode"
+        app:layout_constraintTop_toTopOf="@+id/txtPartCode" />
+
+    <TextView
+        android:id="@+id/txtSerialNumberCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/serialnumber"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPartCode" />
+
+    <TextView
+        android:id="@+id/txtSerialNumberDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSerialNumberCode"
+        app:layout_constraintTop_toTopOf="@+id/txtSerialNumberCode" />
+    <TextView
+        android:id="@+id/txtDomrgCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/DateofMFG"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSerialNumberDetail" />
+
+    <TextView
+        android:id="@+id/txtDomrgDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDomrgCode"
+        app:layout_constraintTop_toTopOf="@+id/txtDomrgCode" />
+    <TextView
+        android:id="@+id/txtHeaderassemblyCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Headerassembly"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDomrgCode" />
+
+    <TextView
+        android:id="@+id/txtHeaderassemblyDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHeaderassemblyCode"
+        app:layout_constraintTop_toTopOf="@+id/txtHeaderassemblyCode" />
+
+
+    <TextView
+        android:id="@+id/txtSillCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sill"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeaderassemblyCode" />
+
+    <TextView
+        android:id="@+id/txtSillDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSillCode"
+        app:layout_constraintTop_toTopOf="@+id/txtSillCode" />
+
+    <TextView
+        android:id="@+id/txtSkateCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/skate"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSillCode" />
+
+    <TextView
+        android:id="@+id/txtSkateDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSkateCode"
+        app:layout_constraintTop_toTopOf="@+id/txtSkateCode"/>
+
+    <TextView
+        android:id="@+id/txtSillrollerassemblysetCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sillrollerassemblyset"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSkateCode" />
+
+    <TextView
+        android:id="@+id/txtsillRollerassemblysetDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSillrollerassemblysetCode"
+        app:layout_constraintTop_toTopOf="@+id/txtSillrollerassemblysetCode"/>
+    <TextView
+        android:id="@+id/txtCarheaderfittingclampCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:visibility="visible"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/carheaderfittingclamp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSillrollerassemblysetCode" />
+
+    <TextView
+        android:id="@+id/txtCarheaderfittingclampDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:visibility="visible"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCarheaderfittingclampCode"
+        app:layout_constraintTop_toTopOf="@+id/txtCarheaderfittingclampCode"/>
+
+    <TextView
+        android:id="@+id/txtMotordriveandpowersupplyCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:visibility="visible"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/MotorDrivePowerSupply"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCarheaderfittingclampCode" />
+
+    <TextView
+        android:id="@+id/txtMotordriveandpowersupplyDetail"
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMotordriveandpowersupplyCode"
+        app:layout_constraintTop_toTopOf="@+id/txtMotordriveandpowersupplyCode"/>
+    <TextView
+        android:id="@+id/txtHardwarekitsetCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/hardwarekitset"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMotordriveandpowersupplyCode" />
+
+    <TextView
+        android:id="@+id/txtHardwarekitsetDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHardwarekitsetCode"
+        app:layout_constraintTop_toTopOf="@+id/txtHardwarekitsetCode"/>
+    <TextView
+        android:id="@+id/txtdrawingmanualCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/drawingmanual"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHardwarekitsetCode" />
+
+    <TextView
+        android:id="@+id/txtdrawingmanualDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtPartCode"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtdrawingmanualCode"
+        app:layout_constraintTop_toTopOf="@+id/txtdrawingmanualCode"/>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="@string/full_address"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="@+id/txtName" />
+
+
+    <TextView
+        android:id="@+id/tvSerialNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/serial_number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameDetail" />
+
+    <TextView
+        android:id="@+id/tvSerialNumberValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSerialNumberTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvSerialNumberTitle" />
+
+    <TextView
+        android:id="@+id/tvMotorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/motor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSerialNumberValue" />
+
+    <TextView
+        android:id="@+id/tvMotorValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMotorTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvMotorTitle" />
+
+
+    <TextView
+        android:id="@+id/tvPowerSupplyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/power_supply"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMotorValue" />
+
+    <TextView
+        android:id="@+id/tvPowerSupplyValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPowerSupplyTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvPowerSupplyTitle" />
+
+
+    <TextView
+        android:id="@+id/tvDateOfMfgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/date_of_mfg"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPowerSupplyValue" />
+
+    <TextView
+        android:id="@+id/tvDateOfMfgValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvDateOfMfgTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvDateOfMfgTitle" />
+
+    <TextView
+        android:id="@+id/tvDriverTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/driver"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateOfMfgValue" />
+
+    <TextView
+        android:id="@+id/tvDriverValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvDriverTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvDriverTitle" />
+
+
+    <TextView
+        android:id="@+id/tvHardWareKitSetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/hard_ware_kit_set"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDriverValue" />
+
+    <TextView
+        android:id="@+id/tvHardWareKitSetValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_toEndOf="@+id/txtName"
+        android:fontFamily="@font/poppins"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvHardWareKitSetTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvHardWareKitSetTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

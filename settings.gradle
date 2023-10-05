@@ -1,0 +1,3 @@
+rootProject.name = "Philbrick"
+include ':app'
+//include ':matisse'
